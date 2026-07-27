@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#061712" />
+  <title>الذاكرون | منصة إسلامية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-glow"></div>
+  <header class="topbar wrap">
+    <a class="brand" href="#home"><span class="brand-mark">۞</span><span>الذّاكِرون<small>منصة إسلامية عصرية هادفة</small></span></a>
+    <nav aria-label="التنقل الرئيسي"><a class="active" href="#home">الرئيسية</a><a href="#quran">القرآن الكريم</a><a href="#adhkar">الأذكار</a><a href="#prayer">مواقيت الصلاة</a><a href="#qibla">القبلة</a><a href="#articles">المقالات</a></nav>
+    <div class="header-actions"><button class="icon-button" aria-label="بحث">⌕</button><button class="language">العربية ◉</button></div>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-art" aria-label="مصحف وفانوس تحت هلال"><div class="moon"></div><div class="arch"></div><div class="lantern">✦</div><div class="quran-book">۞</div></div>
+      <div class="hero-copy">
+        <p class="eyebrow">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</p>
+        <h1>الذّاكِرون</h1><h2>صدقة جارية مباركة</h2>
+        <p class="hero-verse" id="heroVerse">مَثَلُ الَّذِينَ يُنفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنْبَتَتْ سَبْعَ سَنَابِلَ</p>
+        <p class="verse-source" id="heroSource">سورة البقرة — ٢٦١</p>
+        <div class="hero-buttons"><a class="button gold" href="#donate">♡ ادعم بصدقة جارية</a><a class="button green" href="#quran">استكشف المزيد ۞</a></div>
+      </div>
+      <aside class="goodness-card"><span class="sprout">♧</span><h3>ساهم في نشر الخير</h3><p>كن سبباً في هداية قلب أو علمٍ ينتفع به، وهو صدقة جارية لا تنقطع بإذن الله.</p><a href="#donate">تعرّف على مشاريعنا</a></aside>
+    </section>
+
+    <section class="feature-strip wrap" aria-label="أقسام المنصة"><a href="#quran">▣<span>نشر القرآن</span></a><a href="#donate">♜<span>دعم المشاريع</span></a><a href="#donate">♧<span>كفالة المحتاجين</span></a><a href="#donate">♧<span>بناء المستقبل</span></a><a href="#articles">▤<span>نشر العلم</span></a></section>
+
+    <section class="dashboard wrap">
+      <article class="card readers"><div class="card-title"><h2>أشهر القراء</h2><a href="#quran">عرض الكل ‹</a></div><div id="readersList"></div></article>
+      <article class="card quran-card" id="quran"><div class="quran-cover">۞</div><div><h2>القرآن الكريم <span>▣</span></h2><blockquote id="quranText">وَأَنَّهُ هُوَ رَبُّ الشِّعْرَىٰ</blockquote><p id="quranRef">سورة النجم — ٤٩</p><div class="quran-actions"><button class="button gold" id="listenButton">▶ استمع للآية</button><a class="button ghost" target="_blank" rel="noreferrer" href="https://quran.com">المصحف كامل</a></div></div></article>
+      <article class="card prayer-card" id="prayer"><div class="card-title"><h2>مواقيت الصلاة</h2><span class="location" id="prayerLocation">الرياض، السعودية</span></div><div class="date" id="hijriDate">جاري التحديث…</div><ul id="prayerList"><li><span>الفجر</span><time>--:--</time></li><li><span>الظهر</span><time>--:--</time></li><li><span>العصر</span><time>--:--</time></li><li><span>المغرب</span><time>--:--</time></li><li><span>العشاء</span><time>--:--</time></li></ul><button class="full-link" id="refreshPrayer">↻ تحديث المواقيت</button></article>
+    </section>
+
+    <section class="tiles wrap" id="articles">
+      <article class="tile article"><span class="tile-visual">✒</span><div><h2>المقالات</h2><p>مقالات إسلامية مفيدة لتنير قلبك وعقلك</p><a class="button green" href="https://islamqa.info/ar" target="_blank" rel="noreferrer">قراءة المقالات</a></div></article>
+      <article class="tile qibla" id="qibla"><span class="tile-visual">⌁</span><div><h2>القبلة</h2><p>حدد اتجاه القبلة بدقة أينما كنت</p><button class="button green" id="qiblaButton">عرض القبلة ◉</button></div></article>
+      <article class="tile adhkar" id="adhkar"><span class="tile-visual">◌</span><div><h2>الأذكار</h2><p>أذكار الصباح والمساء والأذكار اليومية</p><button class="button green" id="dhikrButton">استعرض الأذكار</button></div></article>
+      <article class="tile charity" id="donate"><span class="tile-visual">♧</span><div><h2>الزكاة والصدقة</h2><p>احسب زكاتك وتبرع بسهولة للمشاريع الخيرية الموثوقة</p><button class="button green" id="zakatButton">احسب الزكاة</button></div></article>
+    </section>
+
+    <section class="newsletter wrap"><div class="mail">✉</div><div><h2>اشترك في نشرتنا البريدية</h2><p>احصل على آيات يومية وأحاديث وتذكير بمحتوى إسلامي مفيد</p></div><form id="subscribeForm"><input required type="email" aria-label="بريدك الإلكتروني" placeholder="أدخل بريدك الإلكتروني"><button class="button gold">اشترك الآن</button></form></section>
+  </main>
+  <footer class="wrap"><div class="footer-brand brand"><span class="brand-mark">۞</span><span>الذّاكِرون<small>منصة إسلامية تهدف إلى نشر الذكر وتعليم القرآن ودعم المشاريع الخيرية</small></span></div><div><h3>المشاريع</h3><a href="#donate">المشاريع الحالية</a><a href="#donate">تقارير المشاريع</a><a href="#donate">كن شريكاً</a></div><div><h3>روابط سريعة</h3><a href="#quran">القرآن الكريم</a><a href="#adhkar">الأذكار</a><a href="#prayer">مواقيت الصلاة</a></div><div><h3>المزيد</h3><a href="#home">عن الذاكرون</a><a href="#articles">اتصل بنا</a><a href="#articles">سياسة الخصوصية</a></div><p class="copyright">جميع الحقوق محفوظة © ٢٠٢۶ الذّاكرون ♥</p></footer>
+  <dialog id="modal"><button class="close" aria-label="إغلاق">×</button><div id="modalContent"></div></dialog><audio id="recitation" preload="none"></audio>
+  <script src="app.js"></script>
+</body>
+</html>
